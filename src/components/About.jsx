@@ -3,7 +3,7 @@ import { Sparkles } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="relative py-28 bg-gradient-to-b from-slate-950 to-black">
+    <section id="about" className="relative py-28 bg-black">
       <div className="mx-auto max-w-5xl px-6">
         <div className="grid gap-10 md:grid-cols-2 items-center">
           <motion.div
@@ -14,7 +14,7 @@ export default function About() {
             className="order-2 md:order-1"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white flex items-center gap-3">
-              <Sparkles className="h-7 w-7 text-cyan-400" />
+              <Sparkles className="h-7 w-7 text-white" />
               About Me
             </h2>
             <p className="mt-4 text-white/70 leading-relaxed">
@@ -35,9 +35,9 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="order-1 md:order-2"
           >
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-tr from-cyan-500/10 via-fuchsia-500/10 to-transparent">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-tr from-white/10 via-white/5 to-transparent">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="h-32 w-32 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 blur-2xl opacity-40" />
+                <div className="h-32 w-32 rounded-full bg-white/20 blur-2xl opacity-40" />
               </div>
               <div className="absolute inset-0 p-6 flex items-end">
                 <p className="text-white/80 text-sm">Carefully engineered details. Thoughtful interactions. Delightful flow.</p>

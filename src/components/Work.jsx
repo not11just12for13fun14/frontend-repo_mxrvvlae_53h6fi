@@ -2,25 +2,25 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'Aurora Commerce',
-    desc: 'High-conversion storefront with micro-interactions and realtime inventory.',
+    title: 'Monochrome Storefront',
+    desc: 'High-conversion e-commerce in pure black & white with crisp micro-interactions.',
     tags: ['Next.js', 'Stripe', 'Edge'],
   },
   {
-    title: 'Horizon OS',
-    desc: '3D dashboard with spatial navigation and tactile feedback motion.',
-    tags: ['Three.js', 'Framer Motion', 'WebGL'],
+    title: 'Synth Sphere UI',
+    desc: 'Abstract, generative motion system inspired by reactive spheres.',
+    tags: ['Spline', 'Framer Motion', 'WebGL'],
   },
   {
-    title: 'Nebula Labs',
-    desc: 'Brand site with generative visuals and smooth narrative scrolling.',
-    tags: ['Vite', 'GSAP', 'Spline'],
+    title: 'Studio System',
+    desc: 'A minimalist design system with strong rhythm and breathing space.',
+    tags: ['Vite', 'Tailwind', 'a11y'],
   },
 ];
 
 export default function Work() {
   return (
-    <section id="work" className="relative py-28 bg-gradient-to-b from-black to-slate-950">
+    <section id="work" className="relative py-28 bg-black">
       <div className="mx-auto max-w-6xl px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export default function Work() {
               className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md hover:bg-white/10 transition relative overflow-hidden"
             >
               <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition">
-                <div className="absolute -inset-20 bg-gradient-to-tr from-cyan-500/10 via-fuchsia-500/10 to-transparent blur-2xl" />
+                <div className="absolute -inset-20 bg-gradient-to-tr from-white/10 via-white/5 to-transparent blur-2xl" />
               </div>
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold text-white">{p.title}</h3>

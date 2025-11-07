@@ -11,14 +11,14 @@ export default function App() {
     // enable smooth scrolling
     document.documentElement.style.scrollBehavior = 'smooth';
 
-    // custom 3D-like cursor follower
+    // custom monochrome cursor follower
     const cursor = document.createElement('div');
     cursor.setAttribute('aria-hidden', 'true');
-    cursor.className = 'pointer-events-none fixed z-[60] h-6 w-6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-cyan-400 to-fuchsia-500 blur-[1px] mix-blend-screen opacity-70';
+    cursor.className = 'pointer-events-none fixed z-[60] h-6 w-6 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white blur-[1px] mix-blend-screen opacity-80';
     document.body.appendChild(cursor);
 
     const trail = document.createElement('div');
-    trail.className = 'pointer-events-none fixed z-[59] h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/10 blur-3xl';
+    trail.className = 'pointer-events-none fixed z-[59] h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/10 blur-3xl';
     document.body.appendChild(trail);
 
     let x = window.innerWidth / 2, y = window.innerHeight / 2;
@@ -49,7 +49,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black text-white antialiased selection:bg-cyan-500/30">
+    <div className="min-h-screen bg-black text-white antialiased selection:bg-white/20">
       <Navbar />
       <main>
         <Hero />
@@ -58,7 +58,7 @@ export default function App() {
         <Contact />
       </main>
       <footer className="border-t border-white/10 py-6 text-center text-white/60 bg-black/50">
-        © {new Date().getFullYear()} Nebula Portfolio — Built with love and motion.
+        © {new Date().getFullYear()} Monochrome Studio — Crafted with motion.
       </footer>
     </div>
   );

@@ -23,14 +23,14 @@ export default function Contact() {
           Let's build something exceptional
         </motion.h2>
         <form onSubmit={onSubmit} className="mt-8 grid gap-4">
-          <input required placeholder="Name" className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/40" />
-          <input required type="email" placeholder="Email" className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/40" />
-          <textarea required placeholder="Tell me about your project" rows={5} className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-cyan-500/40" />
-          <button type="submit" className="mt-2 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-fuchsia-500 px-6 py-3 font-medium text-black shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition">
+          <input required placeholder="Name" className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-white/30" />
+          <input required type="email" placeholder="Email" className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-white/30" />
+          <textarea required placeholder="Tell me about your project" rows={5} className="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-white/30" />
+          <button type="submit" className="mt-2 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-black shadow-lg shadow-white/10 hover:shadow-white/20 transition">
             <Send className="h-4 w-4" /> Send Message
           </button>
           {sent && (
-            <p className="text-green-300/80">Thanks! Your message has been noted.</p>
+            <p className="text-emerald-300/80">Thanks! Your message has been noted.</p>
           )}
         </form>
       </div>

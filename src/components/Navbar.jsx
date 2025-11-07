@@ -17,14 +17,14 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className={`fixed top-0 left-0 right-0 z-50 ${
-        scrolled ? 'backdrop-blur-xl bg-black/40 shadow-lg shadow-cyan-500/5' : 'backdrop-blur-sm bg-black/20'
+        scrolled ? 'backdrop-blur-xl bg-black/50 shadow-lg shadow-white/5' : 'backdrop-blur-sm bg-black/30'
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <a href="#home" className="flex items-center gap-2 text-white">
-            <Rocket className="h-6 w-6 text-cyan-400" />
-            <span className="font-semibold tracking-tight">Nebula Portfolio</span>
+            <Rocket className="h-6 w-6 text-white" />
+            <span className="font-semibold tracking-tight">Monochrome Studio</span>
           </a>
           <div className="hidden sm:flex items-center gap-6 text-sm">
             <a href="#work" className="text-white/80 hover:text-white transition-colors flex items-center gap-2">
@@ -33,7 +33,7 @@ export default function Navbar() {
             <a href="#about" className="text-white/80 hover:text-white transition-colors flex items-center gap-2">
               <User className="h-4 w-4" /> About
             </a>
-            <a href="#contact" className="px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-fuchsia-500 text-black font-medium shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-shadow">
+            <a href="#contact" className="px-4 py-2 rounded-full bg-white text-black font-medium shadow-lg shadow-white/10 hover:shadow-white/20 transition-shadow">
               Contact
             </a>
           </div>
