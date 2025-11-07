@@ -30,7 +30,7 @@ export default function Contact() {
             <Send className="h-4 w-4" /> Send Message
           </button>
           {sent && (
-            <p className="text-emerald-300/80">Thanks! Your message has been noted.</p>
+            <p className="text-white/80">Thanks! Your message has been noted.</p>
           )}
         </form>
       </div>

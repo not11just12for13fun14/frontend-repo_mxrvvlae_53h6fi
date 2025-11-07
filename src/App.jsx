@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
+import { motion, useScroll } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Work from './components/Work';
-import About from './components/About';
 import Contact from './components/Contact';
 
-// Smooth scrolling behavior and custom cursor follower
+// Smooth scrolling behavior and custom cursor follower + scroll progress
 export default function App() {
+  const { scrollYProgress } = useScroll();
+
   useEffect(() => {
     // enable smooth scrolling
     document.documentElement.style.scrollBehavior = 'smooth';
@@ -50,11 +52,16 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-black text-white antialiased selection:bg-white/20">
+      {/* Subtle scroll progress at the very top */}
+      <motion.div
+        style={{ scaleX: scrollYProgress }}
+        className="fixed left-0 right-0 top-0 z-[70] h-[2px] origin-left bg-white/60"
+      />
+
       <Navbar />
       <main>
         <Hero />
         <Work />
-        <About />
         <Contact />
       </main>
       <footer className="border-t border-white/10 py-6 text-center text-white/60 bg-black/50">
